@@ -43,13 +43,12 @@ app.use((req, res, next) => {
   });
   
 // Global error handler
-  app.use((err, req, res, next) => {
-    err.status = err.status || 500;
-    err.message = err.message || 'Server Error';
-    console.error(`Error: ${err.message}, Status: ${err.status}`);
-    res.status(err.status).render('error', { error: err });
-  });
-
+app.use((err, req, res, next) => {
+  err.status = err.status || 500;
+  err.message = err.message || 'Server Error';
+  console.error(`Error: ${err.message}, Status: ${err.status}`);
+  res.status(err.status).render('error', { error: err.message });
+});
 
 // Start the server and listen on port 3000
 const port = 3000;
