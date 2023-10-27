@@ -36,18 +36,18 @@ app.get('/project/:id', (req, res) => {
 
 // 404 handler for undefined routes
 app.use((req, res, next) => {
-    const err = new Error('Page Not Found');
-    err.status = 404;
-    console.error(`Error: ${err.message}, Status: ${err.status}`);
-    res.status(404).render('not-found', { error: err });
-  });
-  
+  const err = new Error('Page Not Found');
+  err.status = 404;
+  console.error(`Error: ${err.message}, Status: ${err.status}`);
+  next(err); 
+});
+
 // Global error handler
 app.use((err, req, res, next) => {
   err.status = err.status || 500;
   err.message = err.message || 'Server Error';
   console.error(`Error: ${err.message}, Status: ${err.status}`);
-  res.status(err.status).render('error', { error: err.message });
+  res.status(err.status).json({ error: err.message }); 
 });
 
 // Start the server and listen on port 3000
