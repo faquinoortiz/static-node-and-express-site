@@ -1,49 +1,49 @@
 {
-    "projects": [
+   "projects": [
       {
-        "id": 0,
-        "project_name": "Techdegree Project 1",
-        "description": "Random Quote Generator",
-        "technologies": ["CSS", "JavaScript", "HTML"],
-        "live_link": "https://faquinoortiz.github.io/techdegree-project-1/ ",
-        "github_link": "https://github.com/faquinoortiz/techdegree-project-1.git",
-        "image_urls": ["/static/images/proj1.jpg","/static/images/td1.jpg" ]
+          "id": 0,
+          "project_name": "Random Quote Generator",
+          "description": "This project generates random quotes.",
+          "technologies": ["CSS", "JavaScript", "HTML"],
+          "live_link": "https://faquinoortiz.github.io/techdegree-project-1/",
+          "github_link": "https://github.com/faquinoortiz/techdegree-project-1.git",
+          "image_urls": ["/static/images/proj1.jpg", "/static/images/td1.jpg"]
       },
       {
-        "id": 1,
-        "project_name": "Techdegree Project 2",
-        "description": "Data Pagination and Filtering",
-        "technologies": ["CSS", "JavaScript", "HTML"],
-        "live_link": "https://faquinoortiz.github.io/techdegree-project-2-nv/",
-        "github_link": "https://github.com/faquinoortiz/techdegree-project-2-nv.git",
-        "image_urls": ["/static/images/proj2.jpg","/static/images/td2.jpg"]
+          "id": 1,
+          "project_name": "Data Pagination and Filtering",
+          "description": "This project focuses on data pagination and filtering.",
+          "technologies": ["CSS", "JavaScript", "HTML"],
+          "live_link": "https://faquinoortiz.github.io/techdegree-project-2-nv/",
+          "github_link": "https://github.com/faquinoortiz/techdegree-project-2-nv.git",
+          "image_urls": ["/static/images/proj2.jpg", "/static/images/td2.jpg"]
       },
       {
-        "id": 2,
-        "project_name": "Techdegree Project 3",
-        "description": "Interactive Form",
-        "technologies": ["CSS", "JavaScript", "HTML"],
-        "live_link": "https://faquinoortiz.github.io/techdegree-project-3/",
-        "github_link": "https://github.com/faquinoortiz/techdegree-project-3.git",
-        "image_urls": ["/static/images/proj3.jpg","/static/images/td3.jpg"]
+          "id": 2,
+          "project_name": "Interactive Form",
+          "description": "This project implements an interactive form using.",
+          "technologies": ["CSS", "JavaScript", "HTML"],
+          "live_link": "https://faquinoortiz.github.io/techdegree-project-3/",
+          "github_link": "https://github.com/faquinoortiz/techdegree-project-3.git",
+          "image_urls": ["/static/images/proj3.jpg", "/static/images/td3.jpg"]
       },
       {
-        "id": 3,
-        "project_name": "Techdegree Project 4",
-        "description": "Guess the word Game",
-        "technologies": ["CSS", "JavaScript", "HTML"],
-        "live_link": "https://faquinoortiz.github.io/techdegree-project-4/",
-        "github_link": "https://github.com/faquinoortiz/techdegree-project-4.git",
-        "image_urls": ["/static/images/proj4.jpg","/static/images/td4.jpg"]
+          "id": 3,
+          "project_name": "Guess the Word Game",
+          "description": "A word guessing game using.",
+          "technologies": ["CSS", "JavaScript", "HTML"],
+          "live_link": "https://faquinoortiz.github.io/techdegree-project-4/",
+          "github_link": "https://github.com/faquinoortiz/techdegree-project-4.git",
+          "image_urls": ["/static/images/proj4.jpg", "/static/images/td4.jpg"]
       },
       {
-        "id": 4,
-        "project_name": "Techdegree Project 5",
-        "description": "API",
-        "technologies": ["CSS", "JavaScript", "HTML"],
-        "live_link": "https://faquinoortiz.github.io/techdegree-project-5/",
-        "github_link": "https://github.com/faquinoortiz/techdegree-project-5.git",
-        "image_urls": ["/static/images/proj5.jpg","/static/images/td5.jpg"]
+          "id": 4,
+          "project_name": "API Project",
+          "description": "A project focusing on using APIs.",
+          "technologies": ["CSS", "JavaScript", "HTML"],
+          "live_link": "https://faquinoortiz.github.io/techdegree-project-5/",
+          "github_link": "https://github.com/faquinoortiz/techdegree-project-5.git",
+          "image_urls": ["/static/images/proj5.jpg", "/static/images/td5.jpg"]
       }
-    ]
+  ]
 }

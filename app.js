@@ -22,21 +22,13 @@ app.get('/about', (req, res) => {
 
 app.get('/project/:id', (req, res) => {
   const projectId = parseInt(req.params.id);
-  const project = data.projects.find((p) => p.id === projectId);
-
-// Rendering a customized version of the Pug project and 404 error page
-  if (project) {
- 
-    res.render('project', { project });
-  } else {
-
-    res.status(404).render('not-found');
-  }
+  const project = data.projects.find((p) => p.id === projectId)
+  
 });
 
 // 404 handler for undefined routes
 app.use((req, res, next) => {
-  const err = new Error('Page Not Found');
+  const err = new Error("Ooopps! The page you are looking cannot be found");
   err.status = 404;
   console.error(`Error: ${err.message}, Status: ${err.status}`);
   next(err); 
