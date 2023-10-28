@@ -7,7 +7,7 @@
         "technologies": ["CSS", "JavaScript", "HTML"],
         "live_link": "https://faquinoortiz.github.io/techdegree-project-1/ ",
         "github_link": "https://github.com/faquinoortiz/techdegree-project-1.git",
-        "image_urls": ["proj1.jpg","td1.jpg" ]
+        "image_urls": ["/static/images/proj1.jpg","/static/images/td1.jpg" ]
       },
       {
         "id": 1,
@@ -16,7 +16,7 @@
         "technologies": ["CSS", "JavaScript", "HTML"],
         "live_link": "https://faquinoortiz.github.io/techdegree-project-2-nv/",
         "github_link": "https://github.com/faquinoortiz/techdegree-project-2-nv.git",
-        "image_urls": ["proj2.jpg","td2.jpg"]
+        "image_urls": ["/static/images/proj2.jpg","/static/images/td2.jpg"]
       },
       {
         "id": 2,
@@ -25,7 +25,7 @@
         "technologies": ["CSS", "JavaScript", "HTML"],
         "live_link": "https://faquinoortiz.github.io/techdegree-project-3/",
         "github_link": "https://github.com/faquinoortiz/techdegree-project-3.git",
-        "image_urls": ["proj3.jpg","td3.jpg"]
+        "image_urls": ["/static/images/proj3.jpg","/static/images/td3.jpg"]
       },
       {
         "id": 3,
@@ -34,7 +34,7 @@
         "technologies": ["CSS", "JavaScript", "HTML"],
         "live_link": "https://faquinoortiz.github.io/techdegree-project-4/",
         "github_link": "https://github.com/faquinoortiz/techdegree-project-4.git",
-        "image_urls": ["proj4.jpg","td4.jpg"]
+        "image_urls": ["/static/images/proj4.jpg","/static/images/td4.jpg"]
       },
       {
         "id": 4,
@@ -43,7 +43,7 @@
         "technologies": ["CSS", "JavaScript", "HTML"],
         "live_link": "https://faquinoortiz.github.io/techdegree-project-5/",
         "github_link": "https://github.com/faquinoortiz/techdegree-project-5.git",
-        "image_urls": ["proj5.jpg","td5.jpg"]
+        "image_urls": ["/static/images/proj5.jpg","/static/images/td5.jpg"]
       }
     ]
 }
