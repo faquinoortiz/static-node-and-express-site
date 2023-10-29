@@ -1,7 +1,6 @@
-extends layout.pug
+extends layout
 
 block content
-
   nav.nav
     a(href='/')
       span &larr;
@@ -10,31 +9,24 @@ block content
   article.portfolio-projects
     .inner-wrapper.flex-row-wrap.two-col
       .project-info-box.box
-      
-      h1 static node and express site
-      p Description
+        h1= project.project_name
+        p Description
         | #{project.description}
 
-      .project-tech-links-box.box
-        h6 Technologies
-        ul
+        .project-tech-links-box.box
+          h6 Technologies
+          ul
+            each tech in project.technologies
+              li= tech
 
-          li HTML
-          li CSS
-          li JavaScript
+        a.btn-link(href=project.live_link) Live Demo
+        a.btn-link(href=project.github_link) GitHub Repo
 
-        
-        a.btn-link(href='https://faquinoortiz.github.io') Live Demo
-        a.btn-link(href='https://github.com/faquinoortiz/') GitHub Repo
+      .project-img-box.box
+        each img, index in project.image_urls
+          img.project-img(src=img, alt=`Project Image ${index + 1}`)
 
-    .project-img-box.box
-
-      
-      img.project-img(src='https://placehold.it/1200x550', alt='')
-      img.project-img(src='https://placehold.it/1200x550', alt='')
-      img.project-img(src='https://placehold.it/1200x550', alt='')
-
-    nav.nav
-      a(href='/')
-        span &larr;
-        |  Back
+  nav.nav
+    a(href='/')
+      span &larr;
+      |  Back
