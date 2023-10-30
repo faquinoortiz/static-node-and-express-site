@@ -1,13 +1,13 @@
 // Importing necessary dependencies
 const express = require('express');
 const app = express();
-const data = require('./data.json'); 
+const data = require('./data.json');
 const path = require('path');
 
 // Setting view engine to pug
 app.set('view engine', 'pug');
 
-// Use a static route to serve static files located in the public folder
+// Use a static route to serve static files located in the 'public' folder
 app.use('/static', express.static(path.join(__dirname, 'public')));
 
 // Setting routes
@@ -30,16 +30,24 @@ app.get('/project/:id', (req, res) => {
   }
 });
 
+// Catch-all route for undefined routes
+app.use((req, res, next) => {
+  const err = new Error('Page Not Found');
+  err.status = 404;
+  console.error(`Error: ${err.message}, Status: ${err.status}`);
+  res.status(404).send('Page Not Found');
+});
+
 // Global error handler
 app.use((err, req, res, next) => {
   err.status = err.status || 500;
   err.message = err.message || 'Server Error';
   console.error(`Error: ${err.message}, Status: ${err.status}`);
-  res.status(err.status).json({ error: err.message }); 
+  res.status(err.status).json({ error: err.message });
 });
 
-//Starting the server local 3000
+// Start the server and listen on port 3000
 const port = 3000;
 app.listen(port, () => {
-  console.log("The application is running on localhost:3000");
+  console.log('The application is running on localhost:3000');
 });
